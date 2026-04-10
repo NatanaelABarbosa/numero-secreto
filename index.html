@@ -15,34 +15,20 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="container__conteudo">
-            <div class="container__informacoes">
-                <div class="container__texto">
-                    <h1>Adivinhe o <span class="container__texto-azul">Número Secreto</span></h1>
-                    <p class="texto__paragrafo">Escolha um numero entre 1 a 100</p>
-                </div>
-                <input type="number" min="1" max="100" class="container__input">
-                <div class="chute container__botoes">
-                    <button onclick="verificarChute()" class="container__botao">
-                        Chutar
-                    </button>
-                    <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>
-                        Novo jogo
-                    </button>
-                </div>
+    <div class="container__login container">
+        <form action="home.html" class="container__conteudo login">
+            <h1 class="titulo__login container__texto">Faça seu <span class="container__texto-azul">LOGIN</span></h1>
+            <div class="container__informacoes div_login">
+                <label class="container__texto" for="username">Nome de Usuário: </label>
+                <input class="container__input" type="text" name="username" id="username" placeholder="Ex: natanael">
             </div>
-            <img src="./img/ia.png" 
-                 alt="Uma pessoa olhando para a esquerda"
-                 class="container__imagem-pessoa" />
-        </div>
+            <div class="container__informacoes div_login">
+                <label for="password">Senha: </label>
+                <input class="container__input" type="password" name="password" id="password" placeholder="1234">
+            </div>
+            <a class="container__botao" style="margin-bottom: 2rem;" href="home.html">LOGAR</a>
+        </form>
     </div>
-
-
-
-
-    <script src="app.js" defer></script>
+    
+    <script src="login.js" defer></script>
 </body>
-
-</html>
