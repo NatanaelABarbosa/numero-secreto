@@ -40,6 +40,9 @@ body::before {
     position: relative;
 }
 
+.texto__paragrafo {
+    color: white;
+}
 
 .container__conteudo {
     display: flex;
