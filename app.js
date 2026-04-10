@@ -48,7 +48,7 @@ function gerarNumeroAleatorio() {
 }
 
 function exibirMensagemInicial() {
-    Document.querySelector('h1').textContent("Adivinhe o número secreto");
+    Document.querySelector('h1').textContent('Adivinhe o <span class="container__texto-azul">Número Secreto</span>');
     Document.querySelector('p').textContent("Escolha um numero entre 1 a 100");
 }
 
