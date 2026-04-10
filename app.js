@@ -2,6 +2,8 @@ let listaDeNumerosSorteados = [];
 let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
+    
+exibirMensagemInicial();
 
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
@@ -43,6 +45,11 @@ function gerarNumeroAleatorio() {
         console.log(listaDeNumerosSorteados)
         return numeroEscolhido;
     }
+}
+
+function exibirMensagemInicial() {
+    Document.querySelector('h1').textContent("Adivinhe o número secreto");
+    Document.querySelector('p').textContent("Escolha um numero entre 1 a 100");
 }
 
 function limparCampo() {
