@@ -16,17 +16,18 @@
 
 <body>
     <div class="container__login container">
-        <form action="home.html" class="container__conteudo login">
+        <form class="container__conteudo login">
             <h1 class="titulo__login container__texto">Faça seu <span class="container__texto-azul">LOGIN</span></h1>
             <div class="container__informacoes div_login">
-                <label class="container__texto" for="username">Nome de Usuário: </label>
+                <label class="container__texto" for="username">Usuario: </label>
                 <input class="container__input" type="text" name="username" id="username" placeholder="Ex: natanael">
             </div>
             <div class="container__informacoes div_login">
-                <label for="password">Senha: </label>
+                <label class="container__texto" for="password">Senha: </label>
                 <input class="container__input" type="password" name="password" id="password" placeholder="1234">
             </div>
-            <a class="container__botao" style="margin-bottom: 2rem;" href="home.html">LOGAR</a>
+            <p class="erro" id="erro"></p>
+            <input type="submit" class="container__botao" style="margin-bottom: 2rem;" >
         </form>
     </div>
     

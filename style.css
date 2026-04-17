@@ -125,7 +125,16 @@ label {
 }
 
 .div_login {
-    margin-top: -4em;
+    margin-top: -5em;
+}
+
+.erro {
+    display: none;
+    color: red;
+    border: 1px solid #d32f2f;
+    background-color: #f8d7da;
+    padding: 1em;
+    border-radius: 1em;
 }
 
 @media screen and (max-width: 1250px) {
